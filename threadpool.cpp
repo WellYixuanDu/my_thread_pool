@@ -89,7 +89,7 @@ void ThreadPool::start(size_t init_thread_size)
     // 启动所有线程
     for (int i = 0; i < m_init_thread_size; ++i)
     {
-        m_threads[i]->start(); // 需要去执行一个线程函数bug
+        m_threads[i]->start(); // 需要去执行一个线程函数
         m_idle_thread_size++;
         m_cur_thread_size++;
     }
